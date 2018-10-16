@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  width: 100%
+  color: black;
+}
+
+#navbar {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  z-index: 1;
+}
+
+#navbarTitle {
+  position: absolute;
+  font-size: 16pt;
+  left: 10px;
+  padding-left: 15px;
+  padding-top: 35.5px;
+}
+
+#menuButtonHolder {
+  position: absolute;
+  padding-right: 15px;
+  padding-top: 15.5px; /*calculate this when logo size is known*/
+  right: 10px;
+}
+
+#pageContent {
+  min-height: calc(100% - 130px); /* calculate size of wrapper minus the height of the area where you want footer*/
+  position: relative; /* To make footer be positioned relative to the content, not the body */
+  padding-bottom: 30px; /* height of footer area, 40px still example. This padding together with the min-height adds up to minimum the browser height */
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  position: absolute; /* make sure the footer stays at the same position, relative to the page content */
+  bottom: 0px; /* positions the footer to the bottom of the page */
+  font-size: 12pt;
+  height: 30px;
+}

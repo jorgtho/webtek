@@ -33,14 +33,14 @@ function rotateMenuIcon() {
 
 function openOverlay() {
 	navbar.style.transitionDelay = "0s"
-    //navbar.style.backgroundColor="rgba(0,0,0,0.2)";
-    dropdown.style.height = "100%";
+    navbar.style.backgroundColor="rgba(0,0,0,0)";
+    dropdown.style.height = "calc(100% - 100px)";
 
 }
 
 function closeOverlay() {
     navbar.style.transitionDelay = "0.5s"
-	//navbar.style.backgroundColor="rgba(0,0,0,0)"; // transparent
+	navbar.style.backgroundColor="rgba(0,0,0,0)"; // transparent
     dropdown.style.height = "0%";
 
 }

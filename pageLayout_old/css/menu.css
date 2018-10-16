@@ -1,0 +1,34 @@
+.overlay {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 1; /* prevents interaction with the elements that are 'under' the overlay */
+    background-color: rgba(0,0,0, 0.2); /* Consider the opacity after adding img */
+    overflow-x: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.overlay-content {
+	margin: auto;
+	overflow: hidden;
+    position: relative;
+    width: 70%;
+}
+
+.overlay-content button {
+    display: block;
+    background-color: white;
+    border: 5px solid black;
+    font-size: 1.4em; /* 32pt is too much */
+    color: black;
+    margin-bottom: 15px;
+    padding: 20px 50px;
+    width: 100%;
+    text-align: left;
+}
+
+.overlay-content button:hover {
+    background-color: black;
+    color: white;
+}

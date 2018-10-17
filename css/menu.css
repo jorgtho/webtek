@@ -26,6 +26,8 @@
     margin-bottom: 15px;
     padding: 20px 50px;
     width: 100%;
+    /*min-height: 100px;*/
+    /*height: 12%;*/
     text-align: left;
     cursor: pointer;
 }

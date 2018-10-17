@@ -12,6 +12,7 @@ let open = false;
 let img = document.getElementById("pluss");
 let navbar = document.getElementById("navbar");
 let dropdown = document.getElementById("dropdown");
+let menu = document.getElementById("menu");
 
 img.addEventListener("click", displayMenu);
 
@@ -32,15 +33,15 @@ function rotateMenuIcon() {
 }
 
 function openOverlay() {
-	navbar.style.transitionDelay = "0s"
+	navbar.style.transitionDelay = "0s";
     navbar.style.backgroundColor="rgba(0,0,0,0)";
     dropdown.style.height = "calc(100% - 100px)";
-
+    menu.style.overflow = "scroll"; /*make the menu scrollable if screen is to small */
 }
 
 function closeOverlay() {
-    navbar.style.transitionDelay = "0.5s"
+    navbar.style.transitionDelay = "0.5s";
 	navbar.style.backgroundColor="rgba(0,0,0,0)"; // transparent
     dropdown.style.height = "0%";
-
+    menu.style.overflow = "hidden"; /*hide the menu again*/
 }

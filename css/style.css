@@ -40,6 +40,11 @@ body {
   padding-bottom: 80px; /* height of footer area, 40px still example. This padding together with the min-height adds up to minimum the browser height */
 }
 
+#pluss {
+  height: 65px;
+  width: 65px;
+}
+
 footer {
   width: 100%;
   text-align: center;

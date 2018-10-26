@@ -4,14 +4,14 @@
     position: absolute;
     z-index: 1; /* prevents interaction with the elements that are 'under' the overlay */
     background-color: rgba(255,255,255, 0); /* Consider the opacity after adding img */
-    /*overflow: hidden;*/
+    overflow: hidden;
     transition: 0.5s;
     -webkit-transition: 0.5s;
 }
 
 .overlay-content {
 	margin: auto;
-	overflow: hidden;
+	
     position: relative;
     width: 70%;
     height: 100%;
@@ -24,7 +24,7 @@
     font-size: 1.4em; /* 32pt is too much */
     color: black;
     margin-bottom: 15px;
-    padding: 20px 50px;
+    padding: 2% 2%;
     width: 100%;
     /*min-height: 100px;*/
     /*height: 12%;*/

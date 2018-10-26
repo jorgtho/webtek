@@ -43,5 +43,5 @@ function closeOverlay() {
     nav.style.transitionDelay = "0.5s"
 	nav.style.backgroundColor="rgba(0,0,0,0)"; // transparent
     drop.style.height = "0";
-    menu.style.overflow = "hidden"; /* hide the menu again */
+    mnu.style.overflow = "hidden"; /* hide the menu again */
 }

@@ -14,6 +14,7 @@ let mnu = document.getElementById("menu"); // naming this 'menu' collides with i
 let nav = document.getElementById("navbar");
 let drop = document.getElementById("dropdown"); // naming this 'dropdown' collides with itemholder.js
 
+
 img.addEventListener("click", displayMenu);
 
 function displayMenu () {

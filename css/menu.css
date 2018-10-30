@@ -11,10 +11,9 @@
 
 .overlay-content {
 	margin: auto;
-	
+	overflow: hidden;
     position: relative;
     width: 70%;
-    height: 100%;
 }
 
 .overlay-content button {
@@ -24,7 +23,7 @@
     font-size: 1.4em; /* 32pt is too much */
     color: black;
     margin-bottom: 15px;
-    padding: 2% 2%;
+    padding: 20px 50px;
     width: 100%;
     /*min-height: 100px;*/
     /*height: 12%;*/

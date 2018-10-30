@@ -36,12 +36,12 @@ function openOverlay() {
 	nav.style.transitionDelay = "0s"
     nav.style.backgroundColor="rgba(0,0,0,0)";
     drop.style.height = "calc(100% - 100px)";
-    mnu.style.overflow = "scroll"; /* make the menu scrollable if screen is to small */
+    mnu.style.overflow = "hidden"; /* make the menu scrollable if screen is to small */
 }
 
 function closeOverlay() {
     nav.style.transitionDelay = "0.5s"
 	nav.style.backgroundColor="rgba(0,0,0,0)"; // transparent
     drop.style.height = "0";
-    mnu.style.overflow = "hidden"; /* hide the menu again */
+    menu.style.overflow = "hidden"; /* hide the menu again */
 }

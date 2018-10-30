@@ -33,16 +33,17 @@ body {
   padding-right: 15px;
   padding-top: 15.5px; /*calculate this when logo size is known*/
   right: 10px;
-}
-
-#pageContent {
-  min-height: calc(100% - 180px); /* calculate size of wrapper minus the height of the area where you want footer*/
-  padding-bottom: 80px; /* height of footer area, 40px still example. This padding together with the min-height adds up to minimum the browser height */
+  cursor: pointer;
 }
 
 #pluss {
   height: 65px;
   width: 65px;
+}
+
+#pageContent {
+  min-height: calc(100% - 180px); /* calculate size of wrapper minus the height of the area where you want footer*/
+  padding-bottom: 80px; /* height of footer area, 40px still example. This padding together with the min-height adds up to minimum the browser height */
 }
 
 footer {

@@ -1,0 +1,53 @@
+#titleHolder {
+  position: absolute;
+  width: 100%;
+  font-size: 32pt;
+  top: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#merchHolder {
+  padding-top: 40px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.merchBox {
+  width: 25%;
+  display: inline-block;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  padding-bottom: 2%;
+}
+
+.merchImg img {
+  width: 100%;
+  border: 4px black solid;
+}
+
+.merchText {
+  text-align: left;
+  font-size: 12pt;
+}
+
+.merchTitle {
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 480px) {
+  #titleHolder {
+    font-size: 18pt;
+    top: 80px;
+  }
+
+  .merchBox {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+
+

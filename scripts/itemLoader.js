@@ -14,8 +14,26 @@ newDiv.appendChild(newLi);
 
 insert.appendChild(newDiv);
 
+
+let navbar2 = document.createElement("div");
+navbar2.id = "navbar";
+let navbarTitle = document.createElement("div");
+navbarTitle.innerHTML = "Wingsuits"
+navbarTitle.id = "navbarTitle";
+
+let menuButtonHolder = document.createElement("div");
+menuButtonHolder.id = "menuButtonHolder";
+menuButtonHolder.innerHTML = `<a href="#">
+  <img src="img/pluss.svg" id="pluss" alt="menu" height="65px" width="65px">
+</a>`
+;
+
+navbar2.appendChild(navbarTitle,menuButtonHolder);
+
+
+
 let dropdown2 = document.createElement("div");
-dropdown2.id = "dropdown2";
+dropdown2.id = "dropdown";
 dropdown2.className = "overlay";
 let menu2 = document.createElement("div");
 menu2.id = "menu2";
@@ -34,19 +52,13 @@ menu2.innerHTML = `<button id="homeButton">Home</button>
 <button id = "merchButton">Merch</button>
 <button id = "contactButton">Contact</button>
 `;
+
 homeButton.id = "homeButton";
 musicButton.id = "musicButton";
 aboutButton.id = "aboutButton";
 tourButton.id = "tourButton";
 merchButton.id = "merchButton";
 contactButton.id = "contactButton";
-
-// menu2.appendChild("homeButton");
-// menu2.appendChild("musicButton");
-// menu2.appendChild("aboutButton");
-// menu2.appendChild("tourButton");
-// menu2.appendChild("merchButton");
-// menu2.appendChild("contactButton");
 
 dropdown2.appendChild(menu2);
 

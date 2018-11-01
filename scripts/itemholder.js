@@ -69,8 +69,8 @@ pageContent.appendChild(footer);
 // routing function
 function route(){
     path = event.target.innerHTML.replace(/\s+/g, '').toLowerCase(); // removes all whitespace and turns the string to lowercase
-    path === 'home' ? path = 'index.html' : path = path + '.html';
-    window.location.href = path;
+    path === 'home' ? path = 'index.html' : path = path + '.html'; // adds '.html' to all paths, replaces path with index.html if 'Home' is selected
+    window.location.assign(path);
 }
 
 

@@ -1,13 +1,3 @@
-
-#titleHolder {
-  position: absolute;
-  width: 100%;
-  font-size: 32pt;
-  top: 40px;
-  text-align: center;
-  font-weight: bold;
-}
-
 @media only screen and (max-width: 480px) {
   #titleHolder {
     font-size: 18pt;

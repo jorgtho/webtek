@@ -43,6 +43,7 @@ let options = ["Home", "Music", "About", "Tour dates", "Merch", "Contact"];
 for (let i = 0; i < options.length; i++) {
     let button = document.createElement("button");
     button.innerHTML = options[i];
+    button.onclick = route; // add routing to the button elements based on the name. see function route() below
     menu.appendChild(button);
 }
 
@@ -51,6 +52,7 @@ dropdown.appendChild(menu);
 navbar.parentNode.insertBefore(dropdown, navbar.nextSibling); // adding the dropdown after the navbar
 
 /* END DROPDOWN */
+
 
 /* START FOOTER */
 
@@ -63,6 +65,13 @@ pageContent.appendChild(footer);
 
 /* END FOOTER */
 
+
+// routing function
+function route(){
+    path = event.target.innerHTML.replace(/\s+/g, '').toLowerCase(); // removes all whitespace and turns the string to lowercase
+    path === 'home' ? path = 'index.html' : path = path + '.html';
+    window.location.href = path;
+}
 
 
 /* For reference, below is the base HTML for this dynamical JS insert 

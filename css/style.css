@@ -39,7 +39,7 @@ h1 {
 #menuButtonHolder {
   position: absolute;
   padding-right: 15px;
-  padding-top: 15.5px; /*calculate this when logo size is known*/
+  padding-top: 15.5px;
   right: 10px;
   cursor: pointer;
 }
@@ -108,10 +108,9 @@ footer p {
 }
 
 .tour-content {
-     margin: auto;
-   /*position: relative;*/
-   width: 80%;
-   height: 100%;
+  margin: auto;
+  width: 80%;
+  height: 100%;
 }
 
 ul {
@@ -120,7 +119,6 @@ ul {
 
 
 .tour-content a {
-    /* display: block; */
     background-color: rgba(255,255,255, 0.9);
     border: 5px solid black;
     color: black;
@@ -280,15 +278,14 @@ ul {
 
 .overlay-content button {
     display: block;
+    font-family: Futura, Nunito, "Trebuchet MS", Arial, sans-serif;
     background-color: rgba(255,255,255, 0.9);
     border: 5px solid black;
-    font-size: 1.4em; /* 32pt is too much */
+    font-size: 1.4em;
     color: black;
     margin-bottom: 15px;
     padding: 20px 50px;
     width: 100%;
-    /*min-height: 100px;*/
-    /*height: 12%;*/
     text-align: left;
     cursor: pointer;
 }

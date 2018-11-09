@@ -55,8 +55,7 @@ p {
 
 a {
 	text-decoration: none;
-	font-style: italic;
-	color: inherit;
+	color: blue;
 }
 
 a:hover {
@@ -83,7 +82,7 @@ table {
 }
 
 td {
-   
+
 }
 
 footer {

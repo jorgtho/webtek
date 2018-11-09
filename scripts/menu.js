@@ -40,6 +40,7 @@ function openOverlay() {
     nav.style.backgroundColor="rgba(0,0,0,0)";
     drop.style.height = "calc(100% - 100px)";
     mnu.style.overflow = "hidden";
+    drop.style.overflow = "scroll";
 }
 
 function closeOverlay() {
@@ -49,4 +50,5 @@ function closeOverlay() {
 	nav.style.backgroundColor="rgba(0,0,0,0)"; // transparent
     drop.style.height = "0";
     menu.style.overflow = "hidden"; /* hide the menu again */
+    drop.style.overflow = "hidden";
 }

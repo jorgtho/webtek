@@ -29,7 +29,7 @@ function onPlayerStateChange(event) {
     console.log("state changed");
 }
 
-function muteButton() {
+function muteButton() { //function for muting/unmuting the video
   if (player.isMuted()) {
     player.unMute();
     console.log("mute")

@@ -26,7 +26,7 @@
          <li>Client Name: Wingsuits (band)
          <li>Contact Person: Jørgen Thorsnes
          <li>Website Name: WingWeb</li>
-         <li>Link to our website: <a href="#">Click here</a></li>
+         <li>Link to our website: <a href="folk.ntnu.no/jorgtho">Click here</a></li>
       </ul>
     </section>
 
@@ -38,42 +38,44 @@
       <p>We found that the logo got too small when it was responsive, so we set it at fixed size 150x276px. We also changed where to click for showing the easter egg, from the footer to the title "Wingsuits" up in the left corner. This was changed too make it easier to find the easter egg.</p><br>
 
       <h3>Changes to about.html</h3>
-      <p>The first idea was to have a sliding animation on the slideshow (images sliding in from left and right when clicking next and previous image buttons). This did not work well on mobile screens, and we changed the slideshow so that when on mobile screens the slideshow had a "fade" animation instead of a "sliding" animation.</p><br>
+      <p>The first idea was to have a sliding animation on the slideshow (images sliding in from left and right when clicking next and previous image buttons). This did not work well on mobile screens, and we changed the slideshow so that when on mobile screens the slideshow had a "fade" animation instead of a "sliding" animation. To maintain good responsivness we changed the slideshow images to 900x600px when on a mobile screen. The original resolution caused the images to be really small on mobile screens.</p><br>
 
       <h3>Changes to contact.html</h3>
       <p>In P2, we said that the contact buttons would be of fixed size. This caused did not work well with the page's responsivness (they got too big on mobile, and too small on very large screens), and we changed the size of the buttons to be responsive.</p><br>
 
       <h3>Changes to merch.html</h3>
-      <p>Insert text</p><br>
+      <p>We made the images of merch responsive, as we had the same problem as in contact.html. The images of the merch also got too small on mobile screens, so we changed them to stack on top of each other, instad of three and three on each row, on mobile screens. We also changed the size of the images from 500x500px to 1000x1000px, as the images looked pixelated with resolution 500x500px.</p><br>
 
       <h3>Changes to music.html</h3>
-      <p>Insert text</p><br>
+      <p>We added a mute button to the video, and started the video as muted, so that the user can choose if he/she wants to listen to the music in the music video or not. We also made it so that the music platform icons got bigger when hovered over. This to make it easier for the user to see that the icons are clickable.</p><br>
 
       <h3>Changes to tourDates.html</h3>
-      <p>Insert text</p><br>
+      <p>We added some whitespace between the title and the buttons containing the links to different concerts. This was done because the alignment of the buttons and the menu where making it hard to distinguish the menubuttons from the concert.</p><br>
 
-      <h3>Changes to 1. required JS element</h3>
-      <p>Insert text</p><br>
+      <h3>Changes to picturegallery.js</h3>
+      <p>We changed the name to "slideshow.js", no other changes were made.</p><br>
 
-      <h3>Changes to 2. required JS element</h3>
-      <p>Insert text</p><br>
+      <h3>Changes to menu.js</h3>
+      <p>We merged the script for the menu-button animation and the rolldown menu, so that they could use the same variables, and thus simplifying the script.</p><br>
 
-      <h3>Changes to 3. required JS element</h3>
-      <p>Insert text</p><br>
+      <h3>Changes to wingsuitman.js</h3>
+      <p>We changed the name of the script to easterEgg.js, no other changes were made.</p><br>
 
-      <h3>Changes to 4. required JS element</h3>
-      <p>Insert text</p><br>
+      <h3>New script file videoPlayer.js</h3>
+      <p>We added a script for muting/unmuting the video. This was because we couldn't use the whole size of the video in the div containing the video, as the video was always had blocks of black on the top and the bottom of the video, and this made it impossible to see the menu-button. The solution was to crop out the part of the video we wanted, and the result was that we could not use YouTube's integrated video controls. We then added a custom mute/unmute button to the video, so the user could control the audio of the video without using YouTube's controls.</p><br>
+
+      <h3>New script file itemHolder.js</h3>
+      <p>We added a script for creating all the elements from the universal page layout, so we would not have to hardcode all universal elements on different pages. This also helped ensure the consistensy of all the pages.</p><br>
 
       <h3>Changes intended CSS styling</h3>
-      <p>Insert text</p><br>
+      <p>As mentioned before, we had to change sizes of fonts/logos/images because we made the mockups in a very large resolution in Adobe Illustrator, no other major changes were done to the CSS styling.</p><br>
 
-      <h3>Additional JS file itemHolder.js</h3>
-      <p>Insert text</p><br>
     </section>
 
     <section>
       <h3>Organizational scheme</h3>
-      <p>List of folders and files, all files in a folder called 'webtek'.</p>
+      <p>All of the following files are gathered inside the folder 'webtek'.</p>
+      <p>List of folders and files.</p>
       <ul>
         <li>index.html</li>
         <li>about.html</li>
@@ -83,7 +85,14 @@
         <li>contact.html</li>
         <li>img/</li>
         <ul>
+          <li>aboutImg1.jpg</li>
+          <li>aboutImg1Mobile.jpg</li>
           <li>...</li>
+          <li>spotify.svg</li>
+          <li>...</li>
+          <li>merchImg1.jpg</li>
+          <li>...</li>
+          <li>skyer.mp4</li>
           <li>...</li>
         </ul>
         <li>css/</li>
@@ -92,10 +101,11 @@
         </ul>
         <li>scripts/</li>
         <ul>
-          <li>picturegallery.js</li>
+          <li>easterEgg.js</li>
+          <li>itemHolder.js</li>
           <li>menu.js</li>
-          <li>hover.js</li>
-          <li>wingsuitman.js</li>
+          <li>slideShow.js</li>
+          <li>videoPlayer.js</li>
         </ul>
       </ul>
 

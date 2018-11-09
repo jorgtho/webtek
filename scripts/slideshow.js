@@ -1,8 +1,8 @@
-var vpHeight = document.documentElement.clientWidth;
+var vpHeight = document.documentElement.clientWidth; //get viewvport height
 var imgIndex = 1;
 var next = true;
 var mobile;
-if ((Math.max(document.documentElement.clientWidth, window.innerWidth)) > 480) {
+if ((Math.max(document.documentElement.clientWidth, window.innerWidth)) > 480) { //check if mobile screen
   mobile = false;
 }
 else {
@@ -34,7 +34,7 @@ function showImg(n) {
   for (i = 0; i < images.length; i++) {
       images[i].style.display = "none"; 
   }
-  if (mobile) {
+  if (mobile) { //out slide animation doesn't work very well on mobile, so added fade animation to make it look better on mobile screens
     images[imgIndex-1].classList.remove("slideLeft");
     images[imgIndex-1].classList.remove("slideRight");
     images[imgIndex-1].classList.add("fade");

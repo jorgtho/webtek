@@ -6,7 +6,7 @@ document.getElementById("navbarTitle").setAttribute("onclick","goWingman()");
 
 function goWingman() { //Får en liten mann i wingsuit til å fly over siden når man trykker på Wingsuits
   
-  let width = document.documentElement.clientWidth;
+  let width = document.documentElement.clientWidth; //to make him disappear when out of browser width
   var leftmargin = 0;
   var topmargin = 0;
   var wingman=document.getElementById("wingman");

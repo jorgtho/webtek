@@ -18,7 +18,7 @@ let pg = document.getElementById("pageContent");
 img.addEventListener("click", displayMenu);
 
 function displayMenu () {
-	rotateMenuIcon();
+	rotateMenuIcon(); //rotate the menu icon when opening/closing menu
 	open ? openOverlay() : closeOverlay();
 }
 
@@ -39,7 +39,7 @@ function openOverlay() {
 	nav.style.transitionDelay = "0s"
     nav.style.backgroundColor="rgba(0,0,0,0)";
     drop.style.height = "calc(100% - 100px)";
-    mnu.style.overflow = "hidden"; /* make the menu scrollable if screen is to small */
+    mnu.style.overflow = "hidden";
 }
 
 function closeOverlay() {

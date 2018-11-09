@@ -10,16 +10,18 @@ else {
 }
 showImg()
 
+//shows next image
 function nextImg() {
   next = true;
   showImg(imgIndex += 1);
 }
+//shows previous image
 function prevImg(n) {
   next = false;
   showImg(imgIndex -= 1);
 }
 
-
+//displays an image
 function showImg(n) {
   if ((Math.max(document.documentElement.clientWidth, window.innerWidth)) > 480) {
     mobile = false;
